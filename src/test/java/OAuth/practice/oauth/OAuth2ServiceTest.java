@@ -41,7 +41,7 @@ class OAuth2ServiceTest {
     private User user;
 
     @BeforeEach
-    void setUp() {
+    void setUp() throws IllegalArgumentException{
         // 예제 데이터 설정
         Map<String, Object> attributes = new HashMap<>();
         attributes.put("name", "John Doe");
